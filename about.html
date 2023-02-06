@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>our Website </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" type="text/css" href="css/abstyle.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <style>
+    .wow:first-child {
+      visibility: hidden;
+    }
+  </style>
+  
+</head>
+<body>
+ 
+ <!-- Start Header  -->
+ <header>
+  <div class="container">
+    <div class="logo">
+      <a href="#"><img src="https://secure.gravatar.com/avatar/fabdb283fe15708440314fae08b0e7a1?s=60&d=retro&r=g"></a>
+    </div>
+    <a href="javascript:void(0)" class="ham-burger">
+        <span></span>	
+        <span></span>
+    </a>
+    <div class="nav">
+      <ul>
+      	<li><a href="index.html">Home</a></li>
+ 	 			<li><a href="about.html">About</a></li>
+ 	 			<li><a href="#membership">Membership</a></li>
+ 	 			<li><a href="patlogin.html">Partner Login</a></li>
+ 	 			<li><a href="ulogin.html">User Login</a></li>
+ 	 			<li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</header>
+<!-- End Header  -->
+
+<!-- Start headpic -->
+<section class="headpic" id="headpic">
+  <div class="container">
+  </div>
+  </section>
+<!-- End headpic -->
+
+<!-- Start first wrapper -->
+<section id="one" class="wrapper1">
+  <div class="content">
+    <h1>ABOUT US</h1>
+    <p>A gymnasium, also known as a gym, is a covered location for athletics. The word is derived from the ancient Greek gymnasium. They are commonly found inGymnasia apparatuses such as barbells, </p>
+  </div>
+</section>
+<!-- End first wrapper -->
+
+<!-- Start second wrapper -->
+
+<!-- Start Features  -->
+<section id="three" class="wrapper">
+  <div class="spotlight">
+    <div class="image flush"><img src="images/pic1.jpeg" alt="" /></div>
+    <div class="inner">
+      <h3>Vision</h3>
+      <p>A gymnasium, also known as a gym, is a covered location for athletics. The word is derived from the ancient Greek gymnasium. They are commonly found inGymnasia apparatuses such as barbells, jumping board, running path, tennis-balls, cricket field, and fencing area are used as exercises. In safe weather, outdoor locations are the most conducive to health.[2] Gyms were popular in ancient Greece. Their curricula in</p>
+    </div>
+  </div>
+  <div class="spotlight alt">
+    <div class="image flush"><img src="images/pic1.jpeg" alt=""  width="400px"/></div>
+    <div  class="inner">
+      <h3>Mission</h3>
+      <p>A gymnasium, also known as a gym, is a covered location for athletics. The word is derived from the ancient Greek gymnasium. They are commonly found inGymnasia apparatuses such as barbells, jumping board, running path, tennis-balls, cricket field, and fencing area are used as exercises. In safe weather, outdoor locations are the most conducive to health.[2] Gyms were popular in ancient Greece. Their curricula included self-defense, gymnastica medica, </p>
+    </div>
+  </div>
+  <div class="spotlight">
+    <div class="image flush"><img src="images/pic1.jpeg" alt=""  /></div>
+    <div class="inner">
+      <h3>Motto</h3>
+      <p>A gymnasium, also known as a gym, is a covered location for athletics. The word is derived from the ancient Greek gymnasium. They are commonly found inGymnasia apparatuses such as barbells, jumping board, running path, tennis-balls, cricket field, and fencing area are used as exercises. In safe weather, outdoor locations are the most conducive to health.[2] Gyms were popular in ancient Greece. Their curricula included self-defense, gymnastica medica, </p>
+    </div>
+  </div>
+</section>
+
+</div>
+</section>
+  <!-- Ends Features -->
+  
+<!-- Start footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+        <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="termandcondition.html">Terms and condition</a></li>
+          <li><a href="policy.html">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Gym</h4>
+        <ul>
+          <li><a href="#">Gym near me</a></li>
+          <li><a href="partnerregis.html">Become a partner</a></li>
+          </div>
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="blog.html">Blogs</a></li>
+          <li><a href="contact.html">Connect Us</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+         </ul>
+      </div>
+      <div class="footer-col">
+       <img src="https://secure.gravatar.com/avatar/fabdb283fe15708440314fae08b0e7a1?s=60&d=retro&r=g"/>
+       <h3>follow us</h3>
+       <div class="social-links">
+         <a href="#"><i class="fa fa-facebook-f"></i></a>
+         <a href="#"><i class="fa fa-twitter"></i></a>
+         <a href="#"><i class="fa fa-instagram"></i></a>
+         </div>
+        </div>
+         <div class="row">
+           <div class="copyright">
+           <h2>All rights reserved to company@</h2>
+    </div>
+    </div>
+  </div>
+</footer>
+ <!-- End footer -->
+
+<!-- jquery -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+	$(document).ready(function(){
+
+      $(".ham-burger, .nav ul li a").click(function(){
+       
+        $(".nav").toggleClass("open")
+
+        $(".ham-burger").toggleClass("active");
+      })      
+      $(".accordian-container").click(function(){
+      	$(".accordian-container").children(".body").slideUp();
+      	$(".accordian-container").removeClass("active")
+      	$(".accordian-container").children(".head").children("span").removeClass("fa-angle-down").addClass("fa-angle-up")
+      	$(this).children(".body").slideDown();
+      	$(this).addClass("active")
+      	$(this).children(".head").children("span").removeClass("fa-angle-up").addClass("fa-angle-down")
+      })
+
+       $(".nav ul li a, .go-down").click(function(event){
+         if(this.hash !== ""){
+
+              event.preventDefault();
+
+              var hash=this.hash; 
+
+              $('html,body').animate({
+                scrollTop:$(hash).offset().top
+              },800 , function(){
+                 window.location.hash=hash;
+              });
+
+              // add active class in navigation
+              $(".nav ul li a").removeClass("active")
+              $(this).addClass("active")
+         }
+      })
+})
+
+</script>
+<script src="js/wow.min.js"></script>
+<script>
+    wow = new WOW(
+      {
+        animateClass: 'animated',
+        offset:       0,
+      }
+    );
+    wow.init();
+  </script>
+</body>
+</html>

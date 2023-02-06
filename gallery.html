@@ -1,0 +1,303 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>our Website </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" type="text/css" href="css/mael.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <style>
+    .wow:first-child {
+      visibility: hidden;
+     }
+/*search*/
+
+.workout{
+	width: 100%;
+  background:rgb(7, 0, 0);
+  margin-top: 5%;
+  padding: 20px;
+  
+}
+.form{
+	margin: 0 auto;
+	width: 70%;
+    margin-left: 20px;
+}
+  #survey-form{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	color: #fff;
+	margin: 0 auto;
+	width: 50%;
+  }
+  .uno{
+	padding: 10px;
+  }
+   #dropdown{
+	width: 140%;
+	height: 40px;
+	font-size: 1rem;
+	border: transparent;
+	border-radius: 5px;
+	padding-left: 5px;
+  }
+  input[type="radio"]{
+	width: 50px;
+	height: 20px;
+	cursor: pointer;
+  }
+  
+   .btn{
+    padding: 8px 30px;
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid transparent;
+    cursor: pointer;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+    margin-top: -37px;
+    margin-left: 180%;
+}
+ .btn:hover{
+	border-color:#222222;
+	color:#222222;
+	background-color: transparent;
+}
+@media(max-width: 640px){
+	.form{
+	margin-top: 40px;
+	width:90%;
+	margin-left: -30px;
+}
+.btn{
+	margin-left: 220%;
+}
+}
+/*serch*/
+     /*gallery*/
+.container5	{
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	margin: 0 auto;
+	max-width: 1170px;
+	padding: 20px;
+	background-color: #fff;
+	margin-top: 30px;
+}
+
+.polaroid {
+	background: #000000;
+	padding: 15px 15px 40px;
+}
+
+.photo {
+	height: 400px;
+	margin-bottom: 10px;
+	object-fit: cover;
+	width: 100%;
+}
+
+h2 {
+	font-size: 1.5rem;
+	color:#fff;
+}
+/*gallery*/
+  </style>
+  
+</head>
+<body>
+ 
+ <!-- Start Header  -->
+ <header>
+  <div class="container">
+    <div class="logo">
+      <a href="#"><img src="https://secure.gravatar.com/avatar/fabdb283fe15708440314fae08b0e7a1?s=60&d=retro&r=g"></a>
+    </div>
+    <a href="javascript:void(0)" class="ham-burger">
+        <span></span>	
+        <span></span>
+    </a>
+    <div class="nav">
+      <ul>
+      	<li><a href="index.html">Home</a></li>
+ 	 			<li><a href="about.html">About</a></li>
+ 	 			<li><a href="#ulogin">Logout</a></li>
+ 	 		 </ul>
+    </div>
+  </div>
+</header>
+<!-- End Header  -->
+
+<section class="workout">
+    <div class="form">
+      <form id="survey-form">
+<label for="dropdown" id="dropdown-label" class="uno"> </label>
+<select id="dropdown" name="rol">
+        <option value=" workout">Select the picture</option>
+        <option value="Chandigarh">Upload from computer</option>
+        <option value="Chandigarh">Upload from drive</option>
+        <option value="Chandigarh">Upload from web</option>
+</select>
+         <a href="" class="btn">Add</a>
+         </form>
+  </div>  
+  </section>
+                
+                    <div class="container5">
+                        <div class="polaroid">
+                            <img class="photo" src="https://images.unsplash.com/photo-1596815045171-88fd3eb19f90?w=611" alt="">		
+                            <div class="capition">
+                                <h2>Title</h2>
+                             
+                            </div>		
+                        </div>	
+                        <div class="polaroid">
+                            <img class="photo" src="https://images.unsplash.com/photo-1612886999633-1a6cfbac68f1?&w=600" alt="">		
+                            <div class="capition">
+                                <h2>Title</h2>
+                                
+                            </div>		
+                        </div>
+                        <div class="polaroid">
+                            <img class="photo" src="https://images.unsplash.com/photo-1601288496920-b6154fe3626a?w=634" alt="">		
+                            <div class="caption">
+                                <h2>Title</h2>
+                                
+                            </div>		
+                        </div>
+                        <div class="polaroid">
+                            <img class="photo" src="https://images.unsplash.com/photo-1604004555489-723a93d6ce74?w=600" alt="">		
+                            <div class="capition">
+                                <h2>Title</h2>
+                                
+                            </div>		
+                        </div>
+                        <div class="polaroid">
+                            <img class="photo" src="https://images.unsplash.com/photo-1577091937200-29915517c0bd?w=633" alt="">		
+                            <div class="capition">
+                                <h2>Title</h2>
+                               
+                            </div>		
+                        </div>	
+                        <div class="polaroid">
+                            <img class="photo" src="https://images.unsplash.com/photo-1522262590532-a991489a0253?&w=564" alt="">		
+                            <div class="capition">
+                                <h2>Title</h2>
+                                
+                            </div>		
+                        </div>	
+                        <div class="polaroid">
+                            <img class="photo" src="https://images.unsplash.com/photo-1505919130581-e235c7ed874f?&w=600" alt="">		
+                            <div class="caption">
+                                <h2>Title</h2>
+                            </div>		
+                        </div>
+                    </div>      
+                   
+<!-- Start footer -->
+<footer class="footer">
+  <div class="container2">
+    <div class="row">
+        <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="#">Terms and condition</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Gym</h4>
+        <ul>
+          <li><a href="#">Gym near me</a></li>
+          <li><a href="#">Become a partner</a></li>
+          </div>
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="#">Blogs</a></li>
+          <li><a href="#">Connect Us</a></li>
+          <li><a href="#">FAQ</a></li>
+         </ul>
+      </div>
+      <div class="footer-col">
+       <img src="https://secure.gravatar.com/avatar/fabdb283fe15708440314fae08b0e7a1?s=60&d=retro&r=g"/>
+       <h3>follow us</h3>
+       <div class="social-links">
+         <a href="#"><i class="fa fa-facebook-f"></i></a>
+         <a href="#"><i class="fa fa-twitter"></i></a>
+         <a href="#"><i class="fa fa-instagram"></i></a>
+         </div>
+        </div>
+         <div class="row">
+           <div class="copyright">
+           <h2>All rights reserved to company@</h2>
+    </div>
+    </div>
+  </div>
+</footer>
+ <!-- End footer -->
+
+     <!-- jquery -->
+     <script src="js/pregis.js"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+    
+          $(".ham-burger, .nav ul li a").click(function(){
+           
+            $(".nav").toggleClass("open")
+    
+            $(".ham-burger").toggleClass("active");
+          })      
+          $(".accordian-container").click(function(){
+              $(".accordian-container").children(".body").slideUp();
+              $(".accordian-container").removeClass("active")
+              $(".accordian-container").children(".head").children("span").removeClass("fa-angle-down").addClass("fa-angle-up")
+              $(this).children(".body").slideDown();
+              $(this).addClass("active")
+              $(this).children(".head").children("span").removeClass("fa-angle-up").addClass("fa-angle-down")
+          })
+    
+           $(".nav ul li a, .go-down").click(function(event){
+             if(this.hash !== ""){
+    
+                  event.preventDefault();
+    
+                  var hash=this.hash; 
+    
+                  $('html,body').animate({
+                    scrollTop:$(hash).offset().top
+                  },800 , function(){
+                     window.location.hash=hash;
+                  });
+    
+                  // add active class in navigation
+                  $(".nav ul li a").removeClass("active")
+                  $(this).addClass("active")
+             }
+          })
+    })
+    
+    </script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        wow = new WOW(
+          {
+            animateClass: 'animated',
+            offset:       0,
+          }
+        );
+        wow.init();
+      </script>
+    </body>
+    </html>
+    
+    

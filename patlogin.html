@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+<head>
+   	<title>Gym Website </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="stylesheet" href="css/animate.css">
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <style>
+    .wow:first-child {
+      visibility: hidden;
+    }
+  body{
+    margin: 0;
+    padding: 0;
+   background: #dfdddd;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: sans-serif;
+}
+/* start login*/
+.login-container{
+    width: 450px;
+    height: 400px;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    background: rgb(255, 255, 255);
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    color: rgb(7, 0, 0);
+    padding: 40px 20px;
+}
+
+.login-container img{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: calc(50% - 50px);
+    border-radius: 50%;
+    top: -50px;
+}
+
+.login-container h1{
+    text-align: center;
+    font-size: 20px;
+}
+
+.login-container label{
+    display: block;
+}
+
+.login-container div{
+    margin-bottom: 20px;
+}
+
+.login-container input[type="text"], input[type="password"]{
+    width: 100%;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    background: transparent;
+    color: rgb(0, 0, 0);
+    height: 40px;
+}
+
+.login-container input[type="submit"]{
+    width: 100%;
+    border: none;
+    outline: none;
+    height: 40px;
+    background:#000000;
+    color: rgb(253, 253, 253);
+    
+}
+.login-container input[type="submit"]:hover{
+    cursor: pointer;
+    box-shadow: 1px 1px 10px #696969;
+}
+a{
+    display: block;
+    text-align: right;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+a:hover{
+    color: #000000;
+    
+}
+/* end login*/
+/* start Header*/
+header{
+	position:fixed;
+	left: 0px;
+	top:0px;
+	width: 100%;
+	z-index: 10;
+	background-color: #000000;
+	padding:10px 15px;
+	opacity: 0.9;
+	height:40px;
+}
+header .container{
+	-webkit-display: flex;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header .logo a{
+	font-size: 30px;
+	text-decoration: none;
+	color:#ffffff;
+	font-weight: 700;
+}
+header .logo a span{
+	color:#c11325;
+}
+header .logo img{
+	height:30px;
+	margin-bottom: 20px;
+}
+header .nav{
+	position: fixed;
+	background-color:rgb(0, 0, 0);
+	width: 250px;
+	top:0;
+	right:0;
+	height: 100%;
+	z-index: 99;
+	padding:100px 0px 15px; 
+	-webkit-transform: translateX(100%);
+	transform: translateX(100%);
+	-webkit-transition: transform .5s ease;
+	transition: transform .5s ease;
+	opacity: 1;
+}
+header .nav.open{
+	-webkit-transform: translateX(0);
+	transform: translateX(0);
+	}
+header .nav ul{
+	list-style: none;
+	margin:0;
+	padding:0px;
+}
+header .nav ul li{
+display: block;
+}
+header .nav ul li a{
+	text-decoration: none;
+	font-size: 30px;
+	font-weight: 400;
+    color: #ffffff;
+    display: block;
+    position: relative;
+    padding:10px 30px;
+}
+header .nav ul li a.active::before{
+	content: '';
+	position: absolute;
+	left:0px;
+	top:0px;
+	height: 100%;
+	width:100%;
+	background-color:#000000;
+	opacity:.2;
+	-webkit-transition: width .5s ease;
+	transition: width .5s ease;
+	z-index: -1;
+}
+header .nav ul li a::before{
+	content: '';
+	position: absolute;
+	left:0px;
+	top:0px;
+	height: 100%;
+	width:0px;
+	background-color:#000000;
+	opacity:.2;
+	-webkit-transition: width .5s ease;
+	transition: width .5s ease;
+	z-index: -1;
+}
+header .nav ul li a:hover::before{
+	width: 100%;
+}
+header .ham-burger{
+	display: inline-block;
+	position: relative;
+	z-index: 100;
+}
+header .ham-burger span{
+	height: 3px;
+	margin-bottom:8px;
+	display: block;
+	background-color:#ffffff;
+	width:30px;
+	-webkit-transition: transform .5s ease;
+	transition: transform .5s ease;
+}
+header .ham-burger span:nth-child(1){
+	transform-origin: left top;
+}
+header .ham-burger span:nth-child(2){
+	transform-origin: left bottom;
+}
+
+header .ham-burger.active span:nth-child(1){
+	-webkit-transform: rotate(45deg) translateY(-6px);
+	transform: rotate(45deg) translateY(-6px);
+}
+header .ham-burger.active span:nth-child(2){
+	-webkit-transform: rotate(-45deg) translateY(6px);
+	transform: rotate(-45deg) translateY(6px)
+}
+
+.container{
+	max-width: 1170px;
+	margin: auto;
+}
+
+/* end Header*/
+@media(max-width: 640px){
+	header{
+		background-color: #000000;
+		opacity: 0.9;
+		height:50px;
+		width:92%;
+	}
+}
+@media(max-width: 640px){
+    .login-container{
+    width: 80%;
+    height: 400px;
+    }
+}
+ </style>
+</head>
+<body>
+    
+ <!-- Start Header  -->
+ <header>
+    <div class="container">
+      <div class="logo">
+        <a href="#"><img src="https://secure.gravatar.com/avatar/fabdb283fe15708440314fae08b0e7a1?s=60&d=retro&r=g"></a>
+      </div>
+      <a href="javascript:void(0)" class="ham-burger">
+          <span></span>	
+          <span></span>
+      </a>
+      <div class="nav">
+        <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#membership">Membership</a></li>
+                    <li><a href="patlogin.html">Partner Login</a></li>
+                    <li><a href="ulogin.html">User Login</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <!-- End Header  -->
+     <div class="login-container">
+            <h1>LOGIN</h1>
+           <div>
+               <label>Username</label>
+               <input type="text" name="username" placeholder="Enter your username here" value="">
+           </div>
+           <div>
+               <label>Password</label>
+               <input type="password" name="password" placeholder="Enter your password here" value="">
+           </div>
+           <input type="submit" name="login" value="LOGIN">
+           <a href="#">Forgot Password?</a>
+           <a href="#">Forgot Username?</a>
+       </form>
+   </div>
+ 
+   <!-- jquery -->
+  
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script>
+      $(document).ready(function(){
+  
+        $(".ham-burger, .nav ul li a").click(function(){
+         
+          $(".nav").toggleClass("open")
+  
+          $(".ham-burger").toggleClass("active");
+        })      
+        $(".accordian-container").click(function(){
+            $(".accordian-container").children(".body").slideUp();
+            $(".accordian-container").removeClass("active")
+            $(".accordian-container").children(".head").children("span").removeClass("fa-angle-down").addClass("fa-angle-up")
+            $(this).children(".body").slideDown();
+            $(this).addClass("active")
+            $(this).children(".head").children("span").removeClass("fa-angle-up").addClass("fa-angle-down")
+        })
+  
+         $(".nav ul li a, .go-down").click(function(event){
+           if(this.hash !== ""){
+  
+                event.preventDefault();
+  
+                var hash=this.hash; 
+  
+                $('html,body').animate({
+                  scrollTop:$(hash).offset().top
+                },800 , function(){
+                   window.location.hash=hash;
+                });
+  
+                // add active class in navigation
+                $(".nav ul li a").removeClass("active")
+                $(this).addClass("active")
+           }
+        })
+  })
+  
+  </script>
+  <script src="js/wow.min.js"></script>
+  <script>
+      wow = new WOW(
+        {
+          animateClass: 'animated',
+          offset:       0,
+        }
+      );
+      wow.init();
+    </script>
+  </body>
+  </html>
+  
+  
+  
+  
+  
+  
+  
+
